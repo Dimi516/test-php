@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Αγορά T-Shirts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Αγορά T-Shirts</h1>
+
+    <!-- Φίλτρα αναζήτησης -->
+    <form method="GET" action="products.php">
+      <label for="size">Μέγεθος:</label>
+      <select name="size" id="size">
+        <option value="">Όλα</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+
+      <label for="color">Χρώμα:</label>
+      <select name="color" id="color">
+        <option value="">Όλα</option>
+        <option value="red">Κόκκινο</option>
+        <option value="blue">Μπλε</option>
+        <option value="green">Πράσινο</option>
+      </select>
+
+      <label for="brand">Μάρκα:</label>
+      <select name="brand" id="brand">
+        <option value="">Όλες</option>
+        <option value="nike">Nike</option>
+        <option value="adidas">Adidas</option>
+        <option value="puma">Puma</option>
+      </select>
+
+      <label for="price">Τιμή:</label>
+      <select name="price" id="price">
+        <option value="">Όλες</option>
+        <option value="0-20">0-20€</option>
+        <option value="20-50">20-50€</option>
+        <option value="50-100">50-100€</option>
+      </select>
+
+      <button type="submit">Αναζήτηση</button>
+    </form>
+
+    <div id="product-list">
+      <!-- Τα προϊόντα θα εμφανίζονται εδώ -->
+    </div>
+  </body>
+</html>
